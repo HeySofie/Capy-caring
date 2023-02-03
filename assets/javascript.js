@@ -51,7 +51,9 @@ function put_food()
 
     if(food == true)
     {
-
+        document.getElementById("plate").src="";
+        food_in_plate = true;
+        food = false;
     }
 
 }
