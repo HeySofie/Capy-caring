@@ -3,7 +3,7 @@ var farm = document.getElementById('farm');
 farm.addEventListener('click', collect_food);
 var farm_grown = false;
 var food = false;
-
+var money_text = document.getElementById('money_number');
 
 //      the farm food grows every 10 seconds
 var growing_time = setTimeout(grow_done, 10000);
@@ -60,6 +60,11 @@ function put_food()
 function food_eaten() 
 {
     document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
-    money = +1;
+    money = money + 1 ;
+    // money++ ;
+    // money += 1 ;
     console.log(money);
+    money_text.innerHTML = money;
+    
+    
 }
