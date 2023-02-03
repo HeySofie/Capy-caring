@@ -6,7 +6,7 @@ var food = false;
 
 
 //      the farm food grows every 10 seconds
-var growing_time = setInterval(grow_done, 10000);
+var growing_time = setTimeout(grow_done, 10000);
 
 
 //      turns farm_frown to true after 10sec? passed- and is supposed to stop the timer
@@ -14,7 +14,6 @@ function grow_done()
 {
     farm_grown = true;
     console.log(farm_grown);
-    clearInterval(growing_time);
   
 }
 
@@ -28,16 +27,15 @@ function collect_food()
     {
         food = true;
         farm_grown = false;
-        var growing_time = setInterval(grow_done, 10000);
+        clearTimeout(grow_done, 10000);
+        console.log('food collected?',food);
 
     }
 
-    else(farm_grown == false)
+    else if(farm_grown == false)
     {
-
+        console.log('farm ready to be harvested?',farm_grown )
     }
-
-    console.log('food collected?',food);
 
 }
 
@@ -54,12 +52,12 @@ function put_food()
         document.getElementById("plate").src="";
         food_in_plate = true;
         food = false;
-        setTimeout(food_eaten, 10000)
+        setTimeout(food_eaten, 10000) //after 10 sec play food_eaten
     }
 
 }
 
-function food_eaten()
+function food_eaten() 
 {
     document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
 }
