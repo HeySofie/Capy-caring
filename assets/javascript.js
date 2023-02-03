@@ -54,6 +54,12 @@ function put_food()
         document.getElementById("plate").src="";
         food_in_plate = true;
         food = false;
+        setTimeout(food_eaten, 10000)
     }
 
+}
+
+function food_eaten()
+{
+    document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
 }
