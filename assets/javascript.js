@@ -34,7 +34,7 @@ function collect_food()
 
     else if(farm_grown == false)
     {
-        console.log('farm ready to be harvested?',farm_grown )
+        console.log('farm ready to be harvested?',farm_grown);
     }
 
 }
@@ -42,7 +42,7 @@ function collect_food()
 
 var plate = document.getElementById('plate');
 plate.addEventListener('click', put_food);
-var food_in_plate = false
+var food_in_plate = false;
 
 function put_food()
 {
@@ -52,7 +52,7 @@ function put_food()
         document.getElementById("plate").src="";
         food_in_plate = true;
         food = false;
-        setTimeout(food_eaten, 10000) //after 10 sec play food_eaten
+        setTimeout(food_eaten, 10000); //after 10 sec play food_eaten
     }
 
 }
@@ -60,4 +60,6 @@ function put_food()
 function food_eaten() 
 {
     document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
+    money = +1;
+    console.log(money);
 }
