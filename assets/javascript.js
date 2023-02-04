@@ -27,7 +27,7 @@ function collect_food()
     {
         food = true;
         farm_grown = false;
-        clearTimeout(grow_done, 10000);
+        growing_time = setTimeout(grow_done, 10000);
         console.log('food collected?',food);
 
     }
