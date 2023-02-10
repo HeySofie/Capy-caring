@@ -34,13 +34,13 @@
 }
 
 #house{
-    width:150px;
+    width:200px;
     grid-column:  4;
     grid-row: 1;
 }
 
 #capy-hut{
-    width: 100px;
+    width: 150px;
     grid-column: 3;
     grid-row: 1;
 }
@@ -54,7 +54,7 @@
     display: grid;
     justify-items: center;
     align-items: baseline;
-    grid-template-columns: 1fr 45% 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #farm{
@@ -64,10 +64,11 @@
 }
 
 #capybara{
-    width: 350px;
-    grid-column: 2;
+    width: 220px;
+    grid-column: 3;
 }
 
 #plate{
     width: 200px;
+    grid-column: 5;
 }
