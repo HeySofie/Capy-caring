@@ -7,5 +7,5 @@ this gives u coins (money), which u later spend on uppgrades u buy at the human 
 
 Img asset credits:
 The capybara - NiffirgGames on itchio
-barn houses and other farm objects - shubibubi on itchio
+barn houses and other farm objects - https://shubibubi.itch.io/
 farm crops - https://opengameart.org/users/josehzz

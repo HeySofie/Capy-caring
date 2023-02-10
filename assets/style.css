@@ -1,3 +1,8 @@
+@font-face {
+    font-family:monospace ;
+    src: url(/assets/Monocraft.ttf);
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -60,7 +65,7 @@
 #farm{
     grid-column: 1;
     justify-self: left;
-    height: 200px;
+    height: 150px;
 }
 
 #capybara{
