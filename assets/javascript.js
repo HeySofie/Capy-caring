@@ -60,9 +60,7 @@ function put_food()
 function food_eaten() 
 {
     document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
-    money = money + 1 ;
-    // money++ ;
-    // money += 1 ;
+    money++ ;
     console.log(money);
     money_text.innerHTML = money;
     
