@@ -1,21 +1,36 @@
 var money = 0;// sets the start money in the begining
+var money_text = document.getElementById('money_number');
 var farm = document.getElementById('farm');
 farm.addEventListener('click', collect_food);
 var farm_grown = false;
 var food = false;
-var money_text = document.getElementById('money_number');
 
-//      the farm food grows every 10 seconds
+
+//      the farm food grows every 10 seconds and intervinals where img changes
 var growing_time = setTimeout(grow_done, 10000);
+setTimeout(grow_33, 3300);
+setTimeout(grow_66, 6600)
 
 
-//      turns farm_frown to true after 10sec? passed- and is supposed to stop the timer
+//      after a time the farm changes to another img/growing time
 function grow_done()
 {
     farm_grown = true;
     console.log(farm_grown);
-  
+
 }
+
+function grow_33()
+{
+    farm.src ="/assets/plantV2many.png";
+}
+
+function grow_66() 
+{
+    farm.src ="/assets/plantV3many.png"
+}
+
+
 
 //      for when the food has grown and player clicks and stores the food
 function collect_food()
@@ -40,6 +55,8 @@ function collect_food()
 }
 
 
+
+//abou putting the food in the plate
 var plate = document.getElementById('plate');
 plate.addEventListener('click', put_food);
 var food_in_plate = false;
@@ -57,6 +74,7 @@ function put_food()
 
 }
 
+// after foo di seaten u get money
 function food_eaten() 
 {
     document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
