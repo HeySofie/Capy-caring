@@ -61,12 +61,15 @@
     justify-items: center;
     align-items: baseline;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 #farm{
     grid-column: 1;
     justify-self: left;
     height: 150px;
+    background-image:url("/assets/small-sandpath.png");
+
 }
 
 #capybara{
