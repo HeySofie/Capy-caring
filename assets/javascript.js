@@ -13,13 +13,6 @@ setTimeout(grow_66, 6600)
 
 
 //      after a time the farm changes to another img/growing time
-function grow_done()
-{
-    farm_grown = true;
-    console.log(farm_grown);
-
-}
-
 function grow_33()
 {
     farm.src ="/assets/plantV2many.png";
@@ -27,7 +20,14 @@ function grow_33()
 
 function grow_66() 
 {
-    farm.src ="/assets/plantV3many.png"
+    farm.src ="/assets/plantV3many.png";
+}
+
+function grow_done()
+{
+    farm_grown = true;
+    console.log(farm_grown);
+    farm.src = "/assets/plant-finish.png"
 }
 
 
