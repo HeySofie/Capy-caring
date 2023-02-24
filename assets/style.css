@@ -82,11 +82,6 @@
 
 }
 
-#grass-long{
-    width: 200px;
-    position:relative;
-    grid-column: 1 / 6;
-}
 
 #plate{
     width: 200px;
