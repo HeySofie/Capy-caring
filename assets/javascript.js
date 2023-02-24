@@ -15,19 +15,19 @@ setTimeout(grow_66, 6600)
 //      after a time the farm changes to another img/growing time
 function grow_33()
 {
-    farm.src ="/assets/plantV2many.png";
+    farm.src ="/assets/imgs/plantV2many.png";
 }
 
 function grow_66() 
 {
-    farm.src ="/assets/plantV3many.png";
+    farm.src ="/assets/imgs/plantV3many.png";
 }
 
 function grow_done()
 {
     farm_grown = true;
     console.log(farm_grown);
-    farm.src = "/assets/plant-finish.png"
+    farm.src = "/assets/imgs/plant-finish.png"
 }
 
 
@@ -44,6 +44,7 @@ function collect_food()
         farm_grown = false;
         growing_time = setTimeout(grow_done, 10000);
         console.log('food collected?',food);
+        farm.src ="/assets/imgs/plantV2many.png";
 
     }
 
@@ -77,7 +78,7 @@ function put_food()
 // after foo di seaten u get money
 function food_eaten() 
 {
-    document.getElementById("plate").src="/assets/pixil-frame-0 (2).png";
+    document.getElementById("plate").src="/assets/imgs/pixil-frame-0 (2).png";
     money++ ;
     console.log(money);
     money_text.innerHTML = money;
