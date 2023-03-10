@@ -13,7 +13,7 @@ start_button.addEventListener('click', start_game);
 //funktion that runs once u press the button to start the game, and make the model not visible
 function start_game()
 {
-    growing_time
+    growing_time();
     model.style.visibility = 'collapse';
 }
 
@@ -58,7 +58,7 @@ function collect_food()
         farm_grown = false;
         console.log('food collected?',food);
         farm.src ="/assets/imgs/plantV2many.png";
-        growing_time
+        growing_time();
 
     }
 
