@@ -14,15 +14,16 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
 }
 
 #model-content{
-    top: 50%;
-    left: 50%;
-
+    border-radius: 10px;
+    padding: 10%;
     position: absolute;
+    display: flexbox;
+    justify-content: center;
     background-color: bisque;
 }
 

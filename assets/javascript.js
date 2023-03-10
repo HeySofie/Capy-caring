@@ -5,6 +5,9 @@ farm.addEventListener('click', collect_food);
 var farm_grown = false;
 var food = false;
 
+//for the model
+ var start_button = document.getElementById('start_button');
+start_button.addEventListener('click',)
 
 //     funktion for the timeouts
 function growing_time()
