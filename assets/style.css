@@ -9,6 +9,7 @@
 /* model start*/
 
 #model{
+    visibility: visible;
     position: fixed;
     width: 100%;
     height: 100%;

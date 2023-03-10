@@ -6,15 +6,25 @@ var farm_grown = false;
 var food = false;
 
 //for the model
- var start_button = document.getElementById('start_button');
-start_button.addEventListener('click',)
+var start_button = document.getElementById('start_button');
+var model = document.getElementById('model');
+start_button.addEventListener('click', start_game);
+
+//funktion that runs once u press the button to start the game, and make the model not visible
+function start_game()
+{
+    growing_time
+    model.style.visibility = 'collapse';
+}
+
+
 
 //     funktion for the timeouts
 function growing_time()
 {
-setTimeout(grow_done, 10000);
-setTimeout(grow_33, 3300);
-setTimeout(grow_66, 6600)
+    setTimeout(grow_done, 10000);
+    setTimeout(grow_33, 3300);
+    setTimeout(grow_66, 6600)
 }
 
 //      after a time the farm changes to another img/growing time
