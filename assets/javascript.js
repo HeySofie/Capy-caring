@@ -78,6 +78,7 @@ function collect_food()
 //      Capybara start
 
 var Capybara = document.getElementById('capybara')
+Capybara.addEventListener('click', )
 
 //      Capybara end
 
