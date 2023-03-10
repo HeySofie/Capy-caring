@@ -18,7 +18,6 @@ function start_game()
 }
 
 
-
 //     funktion for the timeouts
 function growing_time()
 {
