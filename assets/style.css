@@ -6,8 +6,12 @@
     font-family: 'VT323', monospace;
 }
 
+/* model start*/
 
-/* back objects */
+/*model end */
+
+
+/* back objects start */
 
 #back-objects{
     width: 100%;
@@ -53,8 +57,9 @@
     grid-row: 1;
 }
 
+/* back objects end */
 
-/* front objects */
+/* front objects start */
 
 #front-objects{
     width: 100%;
@@ -87,3 +92,4 @@
     width: 200px;
     grid-column: 5;
 }
+/* front objects end */

@@ -6,11 +6,13 @@ var farm_grown = false;
 var food = false;
 
 
-//      the farm food grows every 10 seconds and intervinals where img changes
-var growing_time = setTimeout(grow_done, 10000);
+//     funktion for the timeouts
+function growing_time()
+{
+setTimeout(grow_done, 10000);
 setTimeout(grow_33, 3300);
 setTimeout(grow_66, 6600)
-
+}
 
 //      after a time the farm changes to another img/growing time
 function grow_33()
@@ -42,9 +44,9 @@ function collect_food()
     {
         food = true;
         farm_grown = false;
-        growing_time = setTimeout(grow_done, 10000);
         console.log('food collected?',food);
         farm.src ="/assets/imgs/plantV2many.png";
+        growing_time
 
     }
 
