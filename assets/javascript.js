@@ -5,7 +5,8 @@ farm.addEventListener('click', collect_food);
 var farm_grown = false;
 var food = false;
 
-//for the model
+//      Model start
+
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 start_button.addEventListener('click', start_game);
@@ -17,6 +18,9 @@ function start_game()
     model.style.visibility = 'collapse';
 }
 
+//      Model end
+
+//      Farm start
 
 //     funktion for the timeouts
 function growing_time()
@@ -69,7 +73,15 @@ function collect_food()
 
 }
 
+//      Farm end
 
+//      Capybara start
+
+var Capybara = document.getElementById('capybara')
+
+//      Capybara end
+
+//      Plate start
 
 //abou putting the food in the plate
 var plate = document.getElementById('plate');
@@ -88,6 +100,8 @@ function put_food()
     }
 
 }
+
+//      Plate end
 
 // after foo di seaten u get money
 function food_eaten() 
