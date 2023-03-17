@@ -80,11 +80,12 @@ Capybara.addEventListener('click', capy_interact);
 function capy_interact()
 {
     Capybara.src="/assets/imgs/capybara-sit.png";
-    setTimeout(5000, capychange_og);
+    setTimeout(capychange_og, 5000);
 }
  
 function capychange_og()
 {
+    console.log("hej")
     Capybara.src="/assets/imgs/capybbara.png";
 }  
 
