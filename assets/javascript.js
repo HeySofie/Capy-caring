@@ -6,7 +6,6 @@ var farm_grown = false;
 var food = false;
 
 //      Model start
-
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 start_button.addEventListener('click', start_game);
@@ -17,13 +16,10 @@ function start_game()
     growing_time();
     model.style.visibility = 'collapse';
 }
-
 //      Model end
 
 //      Farm start
-
-//     funktion for the timeouts
-function growing_time()
+function growing_time()//     funktion for the timeouts
 {
     setTimeout(grow_done, 10000);
     setTimeout(grow_33, 3300);
@@ -77,24 +73,27 @@ function collect_food()
 
 //      Capybara start
 
-var Capybara = document.getElementById('capybara')
-Capybara.addEventListener('click', )
+var Capybara = document.getElementById('capybara');
+Capybara.addEventListener('click', );
+
+function capy_interact()
+{
+    Capybara
+}
 
 //      Capybara end
 
 //      Plate start
-
-//abou putting the food in the plate
 var plate = document.getElementById('plate');
 plate.addEventListener('click', put_food);
 var food_in_plate = false;
 
-function put_food()
+function put_food() //abou putting the food in the plate
 {
 
-    if(food == true)
+    if(food == true && food_in_plate == false)
     {
-        document.getElementById("plate").src="";
+        plate.src="";
         food_in_plate = true;
         food = false;
         setTimeout(food_eaten, 10000); //after 10 sec play food_eaten
@@ -102,15 +101,15 @@ function put_food()
 
 }
 
-//      Plate end
-
-// after foo di seaten u get money
 function food_eaten() 
 {
-    document.getElementById("plate").src="/assets/imgs/pixil-frame-0 (2).png";
+    plate.src="/assets/imgs/pixil-frame-0 (2).png";
     money++ ;
     console.log(money);
     money_text.innerHTML = money;
     
     
 }
+//      Plate end
+
+
