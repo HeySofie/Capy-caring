@@ -21,9 +21,9 @@ function start_game()
 //      Farm start
 function growing_time()//     funktion for the timeouts
 {
-    setTimeout( grow_done , 10000 );
-    setTimeout( grow_33 , 3300 );
-    setTimeout( grow_66 , 6600 )
+    setTimeout(grow_done, 10000);
+    setTimeout(grow_33, 3300);
+    setTimeout(grow_66, 6600)
 }
 
 //      after a time the farm changes to another img/growing time
@@ -50,8 +50,6 @@ function grow_done()
 function collect_food()
 {
 
-
-
     if(farm_grown == true && food == false)
     {
         food = true;
@@ -74,26 +72,28 @@ function collect_food()
 //      Capybara start
 
 var Capybara = document.getElementById('capybara');
-Capybara.addEventListener('click',capy_interact );
+Capybara.addEventListener('click', capy_interact);
 
 function capy_interact()
 {
     Capybara.src="/assets/imgs/capybara-sit.png";
-    setTimeout( 5000 , capychange_og );
+    setTimeout(5000, capychange_og);
 }
  
 function capychange_og()
 {
-    Capybara.src="assets/imgs/capybbara.png";
+    Capybara.src="/assets/imgs/capybbara.png";
 }  
+
 //      Capybara end
 
 //      Plate start
+
+var food_in_plate = false;
 var plate = document.getElementById('plate');
 plate.addEventListener('click', put_food);
-var food_in_plate = false;
 
-function put_food() //abou putting the food in the plate
+function put_food() //about putting the food in the plate
 {
 
     if( food == true && food_in_plate == false )
@@ -101,7 +101,7 @@ function put_food() //abou putting the food in the plate
         plate.src="";
         food_in_plate = true;
         food = false;
-        setTimeout( food_eaten , 10000 ); //after 10 sec play food_eaten
+        setTimeout( food_eaten, 10000 ); //after 10 sec play food_eaten
     }
 
 }
@@ -115,6 +115,5 @@ function food_eaten()
     
     
 }
+
 //      Plate end
-
-
