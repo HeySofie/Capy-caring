@@ -6,19 +6,21 @@ var farm_grown = false;
 var food = false;
 
 //      Model start
+
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 start_button.addEventListener('click' , start_game);
 
-//funktion that runs once u press the button to start the game, and make the model not visible
-function start_game()
+function start_game() // once u press the button to start the game make the model not visible
 {
     growing_time();
     model.style.visibility = 'collapse';
 }
+
 //      Model end
 
 //      Farm start
+
 function growing_time()//     funktion for the timeouts
 {
     setTimeout(grow_done, 10000);
@@ -69,6 +71,7 @@ function collect_food()
 
 //      Farm end
 
+
 //      Capybara start
 
 var Capybara = document.getElementById('capybara');
@@ -86,6 +89,8 @@ function capychange_og()
 }  
 
 //      Capybara end
+
+
 
 //      Plate start
 
