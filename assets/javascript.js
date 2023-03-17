@@ -114,7 +114,7 @@ function put_food() //about putting the food in the plate
 
 function food_eaten() 
 {
-    plate.src="/assets/imgs/pixil-frame-0 (2).png";
+    plate.src="/assets/imgs/plate.png";
     money++ ;
     console.log( money );
     money_text.innerHTML = money;
