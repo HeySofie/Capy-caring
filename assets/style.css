@@ -16,24 +16,33 @@
     justify-content: center;
     align-items: center; 
     z-index: 2;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(1px);
 
 }
 
-#model-content{
+#model-content{ 
     border-radius: 10px;
-    padding: 10%;
+    border-color: white;
+    border-style: solid;
+    border-width: 7px;
+    padding: 7%;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr;
     justify-items: center;
     background-color: bisque;
     z-index: 1;
 }
 
+#model-heading{
+    font-size: 40px;
+    grid-row: 1;
+}
+
 #start_button{
+    grid-row: 3;
     width: 50%;
     margin-top: 15px;
     padding: 5px;
