@@ -1,9 +1,6 @@
 var money = 0;// sets the start money in the begining
 var money_text = document.getElementById('money_number');
-var farm = document.getElementById('farm');
-farm.addEventListener('click' , collect_food);
-var farm_grown = false;
-var food = false;
+
 
 //      Model start
 
@@ -20,6 +17,11 @@ function start_game() // once u press the button to start the game make the mode
 //      Model end
 
 //      Farm start
+
+var farm = document.getElementById('farm');
+farm.addEventListener('click' , collect_food);
+var farm_grown = false;
+var food = false;
 
 function growing_time()//     funktion for the timeouts
 {
