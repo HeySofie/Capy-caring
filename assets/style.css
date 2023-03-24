@@ -99,7 +99,8 @@
 }
 
 #capy-hut{
-    width: 200px;
+    width: 150px;
+
     grid-column: 3;
     grid-row: 1;
 }
@@ -124,7 +125,7 @@
     grid-column: 1;
     justify-self: left;
     height: 150px;
-
+    image-rendering: crisp-edges;
 }
 
 
