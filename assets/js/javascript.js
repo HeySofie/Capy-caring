@@ -124,7 +124,7 @@ function put_food() //about putting the food in the plate
         plate.src="";
         food_in_plate = true;
         food = false;
-        setTimeout( food_eaten, 10 ); //after 10 sec play food_eaten
+        setTimeout( food_eaten, 500 ); //after 10 sec play food_eaten
     }
 
 }
