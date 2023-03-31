@@ -12,7 +12,7 @@ function start_game() // once u press the button to start the game make the mode
 start_button.addEventListener('click', start_game);
 
 //      Model end
-
+//lol
 //      money start
 var money = 0;// sets the start money in the begining
 var money_text = document.getElementById('money_number');
