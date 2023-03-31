@@ -5,7 +5,7 @@ var model = document.getElementById('model');
 
 function start_game() // once u press the button to start the game make the model not visible
 {
-    growing_time( );
+    growing_time();
     model.style.visibility = 'collapse';
 }
 
