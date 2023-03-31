@@ -1,15 +1,15 @@
-
 //      Model start
 
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
-start_button.addEventListener('click' , start_game);
 
 function start_game() // once u press the button to start the game make the model not visible
 {
-    growing_time();
+    growing_time( );
     model.style.visibility = 'collapse';
 }
+
+start_button.addEventListener('click', start_game);
 
 //      Model end
 
@@ -124,7 +124,7 @@ function put_food() //about putting the food in the plate
         plate.src="";
         food_in_plate = true;
         food = false;
-        setTimeout( food_eaten, 500 ); //after 10 sec play food_eaten
+        setTimeout( food_eaten, 5000 ); //after 10 sec play food_eaten
     }
 
 }
