@@ -1,6 +1,3 @@
-var money = 0;// sets the start money in the begining
-var money_text = document.getElementById('money_number');
-
 
 //      Model start
 
@@ -15,6 +12,24 @@ function start_game() // once u press the button to start the game make the mode
 }
 
 //      Model end
+
+//      money start
+var money = 0;// sets the start money in the begining
+var money_text = document.getElementById('money_number');
+
+var tempStorage = sessionStorage.getItem('money_number');
+//if(tempStorage) första sättet
+//if(tempStorage === null)
+console.log(tempStorage);
+if(tempStorage)
+{
+    money = tempStorage;
+    console.log("redan finns " + tempStorage);
+    // om den redan finns
+}
+console.log("money är så här mycket " + money);
+
+//      money end
 
 //      Farm start
 
@@ -109,7 +124,7 @@ function put_food() //about putting the food in the plate
         plate.src="";
         food_in_plate = true;
         food = false;
-        setTimeout( food_eaten, 10000 ); //after 10 sec play food_eaten
+        setTimeout( food_eaten, 10 ); //after 10 sec play food_eaten
     }
 
 }
@@ -118,10 +133,10 @@ function food_eaten()
 {
     plate.src="/assets/imgs/plate.png";
     money++ ;
-    console.log( money );
+    console.log( "hej " + money );
     money_text.innerHTML = money;
-    
-    
+    sessionStorage.setItem('money_number', money);
+    food_in_plate = false;
 }
 
 //      Plate end
