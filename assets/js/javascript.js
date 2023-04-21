@@ -3,6 +3,7 @@
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 
+
 function start_game() // once u press the button to start the game make the model not visible
 {
     growing_time();
@@ -53,7 +54,7 @@ function close_shop()
 
 function buy_hottub()
 {
-
+  // either use a map or array to store the brought items
 }
 
 //      store model end
