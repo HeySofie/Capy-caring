@@ -84,6 +84,7 @@
 
 #back-objects img{
     margin: 2px;
+
     align-self: baseline;
     justify-self: center;
 
@@ -100,6 +101,12 @@
 
     grid-column: 3;
     grid-row: 1;
+}
+
+#hottub{
+    width: 150px;
+    grid-column: 2;
+    visibility: hidden;
 }
 
 /* back objects end */
