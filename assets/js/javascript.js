@@ -12,7 +12,7 @@ function start_game() // once u press the button to start the game make the mode
 start_button.addEventListener('click', start_game);
 
 //      Model end
-//lol
+
 //      money start
 var money = 0;// sets the start money in the begining
 var money_text = document.getElementById('money_number');
@@ -30,6 +30,26 @@ if(tempStorage)
 console.log("money är så här mycket " + money);
 
 //      money end
+
+//      shop model start
+var house = document.getElementById('house');
+var shop = document.getElementById('shop_model');
+var exit_button = document.getElementById('exit_button');
+
+house.addEventListener('click',open_shop )
+exit_button.addEventListener('click', close_shop )
+
+function open_shop()
+{
+    shop.style.visibility = 'visible';
+}
+
+function close_shop(){
+    shop.style.visibility = 'hidden';
+}
+
+
+//      store model end
 
 //      Farm start
 
@@ -102,7 +122,6 @@ function capy_interact()
  
 function capychange_og()
 {
-    console.log("hej")
     Capybara.src="/assets/imgs/capybbara.png";
 }  
 
