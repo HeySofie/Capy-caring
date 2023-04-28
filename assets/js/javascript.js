@@ -62,9 +62,18 @@ function close_shop()
 
 function buy_hottub()
 {
-    hottub.style.visibility = 'visible'
-    money-=5
-    money_text.innerHTML = money;
+    if(parseFloat(money) < 5)
+    {
+        alert("no")
+    }
+
+    else
+    {
+        hottub.style.visibility = 'visible'
+        money-=5
+        money_text.innerHTML = money;
+    }
+
   // either use a map or array to store the brought items
 }
 
@@ -162,7 +171,7 @@ function put_food() //about putting the food in the plate
         plate.src="";
         food_in_plate = true;
         food = false;
-        setTimeout( food_eaten, 5000 ); //after 10 sec play food_eaten
+        setTimeout( food_eaten, 3500 ); //after 10 sec play food_eaten
     }
 
 }
