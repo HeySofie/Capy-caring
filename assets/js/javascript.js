@@ -1,12 +1,23 @@
 //      storage? start
+var stored_uppgrades = sessionStorage.getItem('owned_uppgrades');
+var stored_money = sessionStorage.getItem('money_number');
+ // med hjälp med "key " jommer man åt värdet
 
-var tempStorage = sessionStorage.getItem('money_number');
-console.log(tempStorage);
-if(tempStorage)
+if(stored_money)
 {
-    money = tempStorage;
-    console.log("redan finns " + tempStorage);
+    money = stored_money;
+    console.log("redan finns " + stored_money);
     // om den redan finns
+}
+
+if(stored_uppgrades)
+{
+    owned_uppgrades = stored_uppgrades;
+}
+
+if(owned_uppgrades.includes("hottub"))
+{
+    hottub.style.visibility = 'visible';
 }
 
 //      storage? end
@@ -17,7 +28,7 @@ var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 
 
-function start_game() // once u press the button to start the game make the model not visible
+function start_game() // once u press the button make the model not visible
 {
     growing_time();
     model.style.visibility = 'collapse';
@@ -43,6 +54,7 @@ var shop = document.getElementById('shop_model');
 var exit_button = document.getElementById('exit_button');
 var hottub_item = document.getElementById('hottub_item');
 var hottub = document.getElementById('hottub');
+var hottub_item_text = document.getElementById('hottub_item_text');
 
 house.addEventListener('click', open_shop);
 exit_button.addEventListener('click', close_shop);
@@ -63,15 +75,16 @@ function buy_hottub()
 {
     if(parseFloat(money) < 5 || owned_uppgrades.includes("hottub") == true)
     {
-        hottub_item.innerHTML = "cant buy";
+        hottub_item_text.innerHTML = "cant buy";
     }
 
     else
     {
-        hottub.style.visibility = 'visible'
-        money-=5
+        hottub.style.visibility = 'visible';
+        money-=5;
         money_text.innerHTML = money;
         owned_uppgrades.push("hottub");
+        // sessionstorage("välj din egen nyckel", "namnet på item")
     }
 
   // either use a map or array to store the brought items
