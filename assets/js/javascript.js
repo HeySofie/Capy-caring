@@ -1,8 +1,6 @@
 //      storage? start
 
 var tempStorage = sessionStorage.getItem('money_number');
-//if(tempStorage) första sättet
-//if(tempStorage === null)
 console.log(tempStorage);
 if(tempStorage)
 {
@@ -39,6 +37,7 @@ var money_text = document.getElementById('money_number');
 //      money end
 
 //      shop model start
+var owned_uppgrades = new Array();
 var house = document.getElementById('house');
 var shop = document.getElementById('shop_model');
 var exit_button = document.getElementById('exit_button');
@@ -62,9 +61,9 @@ function close_shop()
 
 function buy_hottub()
 {
-    if(parseFloat(money) < 5)
+    if(parseFloat(money) < 5 || owned_uppgrades.includes("hottub") == true)
     {
-        alert("no")
+        hottub_item.innerHTML = "cant buy";
     }
 
     else
@@ -72,6 +71,7 @@ function buy_hottub()
         hottub.style.visibility = 'visible'
         money-=5
         money_text.innerHTML = money;
+        owned_uppgrades.push("hottub");
     }
 
   // either use a map or array to store the brought items
@@ -154,8 +154,6 @@ function capychange_og()
 }  
 
 //      Capybara end
-
-
 
 //      Plate start
 
