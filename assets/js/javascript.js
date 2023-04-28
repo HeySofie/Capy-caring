@@ -1,22 +1,4 @@
-//      Model start
-
-var start_button = document.getElementById('start_button');
-var model = document.getElementById('model');
-
-
-function start_game() // once u press the button to start the game make the model not visible
-{
-    growing_time();
-    model.style.visibility = 'collapse';
-}
-
-start_button.addEventListener('click', start_game);
-
-//      Model end
-
-//      money start
-var money = 0;// sets the start money in the begining
-var money_text = document.getElementById('money_number');
+//      storage? start
 
 var tempStorage = sessionStorage.getItem('money_number');
 //if(tempStorage) första sättet
@@ -28,7 +10,31 @@ if(tempStorage)
     console.log("redan finns " + tempStorage);
     // om den redan finns
 }
-console.log("money är så här mycket " + money);
+
+//      storage? end
+
+//      Model start
+
+var start_button = document.getElementById('start_button');
+var model = document.getElementById('model');
+
+
+function start_game() // once u press the button to start the game make the model not visible
+{
+    growing_time();
+    model.style.visibility = 'collapse';
+    money_text.innerHTML = money;
+}
+
+start_button.addEventListener('click', start_game);
+
+//      Model end
+
+//      money start
+var money = 0;// sets the start money in the begining
+var money_text = document.getElementById('money_number');
+
+
 
 //      money end
 
@@ -37,10 +43,12 @@ var house = document.getElementById('house');
 var shop = document.getElementById('shop_model');
 var exit_button = document.getElementById('exit_button');
 var hottub_item = document.getElementById('hottub_item');
+var hottub = document.getElementById('hottub');
 
-house.addEventListener('click', open_shop)
-exit_button.addEventListener('click', close_shop)
-hottub_item.addEventListener('click', buy_hottub)
+house.addEventListener('click', open_shop);
+exit_button.addEventListener('click', close_shop);
+hottub_item.addEventListener('click', buy_hottub);
+
 
 function open_shop()
 {
@@ -54,6 +62,9 @@ function close_shop()
 
 function buy_hottub()
 {
+    hottub.style.visibility = 'visible'
+    money-=5
+    money_text.innerHTML = money;
   // either use a map or array to store the brought items
 }
 
