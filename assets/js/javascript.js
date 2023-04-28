@@ -36,10 +36,10 @@ console.log("money är så här mycket " + money);
 var house = document.getElementById('house');
 var shop = document.getElementById('shop_model');
 var exit_button = document.getElementById('exit_button');
-var  hottub_item = document.getElementById('hottub_item');
+var hottub_item = document.getElementById('hottub_item');
 
-house.addEventListener('click',open_shop )
-exit_button.addEventListener('click', close_shop )
+house.addEventListener('click', open_shop)
+exit_button.addEventListener('click', close_shop)
 hottub_item.addEventListener('click', buy_hottub)
 
 function open_shop()
@@ -49,7 +49,7 @@ function open_shop()
 
 function close_shop()
 {
-    shop.style.visibility = 'hidden';
+    shop.style.visibility = 'collapse';
 }
 
 function buy_hottub()

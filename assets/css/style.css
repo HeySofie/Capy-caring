@@ -59,14 +59,14 @@
 
 /* shop model start */
 #shop_model{
-    visibility: hidden;
+    visibility: collapse;
     width: 100%;
     height: 100%;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
 }   
 
 #shop_model_content{
