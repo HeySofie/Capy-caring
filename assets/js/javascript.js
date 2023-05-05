@@ -1,7 +1,14 @@
 var money = 0;// sets the start money in the begining
 var money_text = document.getElementById('money_number');
 var stored_money = sessionStorage.getItem('money_number');
+var start_button = document.getElementById('start_button');
+var model = document.getElementById('model');
+var Capybara = document.getElementById('capybara');
 //var obj_div_img = document.getElementById("tst");
+
+start_button.addEventListener('click', start_game);
+Capybara.addEventListener('click', capy_interact);
+
 
 var obj = {
     name: 'itemone',
@@ -24,13 +31,6 @@ else
     console.log("couldn't find!");
 }
 
-
-//      Model starts
-
-var start_button = document.getElementById('start_button');
-var model = document.getElementById('model');
-start_button.addEventListener('click', start_game);
-
 function start_game() // once u press the button make the model not visible
 {
     growing_time();
@@ -38,4 +38,13 @@ function start_game() // once u press the button make the model not visible
     money_text.innerHTML = money;
 }
 
-//      Model end
+function capy_interact()
+{
+    Capybara.src="/assets/imgs/capybara-sit.png";
+    setTimeout(capychange_og, 5000);
+}
+ 
+function capychange_og()
+{
+    Capybara.src="/assets/imgs/capybbara.png";
+}  

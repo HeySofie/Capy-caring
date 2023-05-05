@@ -1,9 +1,10 @@
-//      Farm start
-
 var farm = document.getElementById('farm');
 farm.addEventListener('click' , collect_food);
 var farm_grown = false;
 var food = false;
+var food_in_plate = false;
+var plate = document.getElementById('plate');
+plate.addEventListener('click', put_food);
 
 function growing_time()//     funktion for the timeouts
 {
@@ -30,8 +31,6 @@ function grow_done()
     farm.src = "/assets/imgs/plant-finish.png"
 }
 
-
-
 //      for when the food has grown and player clicks and stores the food
 function collect_food()
 {
@@ -53,33 +52,6 @@ function collect_food()
 
 }
 
-//      Farm end
-
-
-//      Capybara start
-
-var Capybara = document.getElementById('capybara');
-Capybara.addEventListener('click', capy_interact);
-
-function capy_interact()
-{
-    Capybara.src="/assets/imgs/capybara-sit.png";
-    setTimeout(capychange_og, 5000);
-}
- 
-function capychange_og()
-{
-    Capybara.src="/assets/imgs/capybbara.png";
-}  
-
-//      Capybara end
-
-//      Plate start
-
-var food_in_plate = false;
-var plate = document.getElementById('plate');
-plate.addEventListener('click', put_food);
-
 function put_food() //about putting the food in the plate
 {
 
@@ -91,6 +63,7 @@ function put_food() //about putting the food in the plate
         setTimeout( food_eaten, 3500 ); //after 10 sec play food_eaten
     }
 
+    
 }
 
 function food_eaten() 
@@ -102,5 +75,3 @@ function food_eaten()
     sessionStorage.setItem('money_number', money);
     food_in_plate = false;
 }
-
-//      Plate end

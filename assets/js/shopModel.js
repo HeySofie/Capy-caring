@@ -33,7 +33,7 @@ function buy_hottub()
         hottub.style.visibility = 'visible';
         money-=5;
         money_text.innerHTML = money;
-        owned_uppgrades.push("hottub");
+        //owned_uppgrades.push("hottub");
         // sessionstorage("välj din egen nyckel", "namnet på item")
     }
 
