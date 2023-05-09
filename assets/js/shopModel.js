@@ -7,8 +7,9 @@ var hottub_item_text = document.getElementById('hottub_item_text');
 
 var owned_uppgrades = {
     hottub: false,
-
 };
+
+console.log( "is hottub owned?" + owned_uppgrades['hottub'] );
 
 //var stored_hottub = sessionStorage.getItem('hottub_owned');
 // create a objet where u define if the uppgrade is owned or not, and then save the object with a key "stored_objects" that u then 
@@ -30,7 +31,7 @@ function close_shop()
 
 function buy_hottub()
 {
-    if(parseFloat(money) < 5 || owned_uppgrades.includes("hottub") == true)
+    if(parseFloat(money) < 5 || owned_uppgrades["hottub"] == true)
     {
         hottub_item_text.innerHTML = "cant buy";
     }
@@ -41,8 +42,8 @@ function buy_hottub()
         money-=5;
         money_text.innerHTML = money;
         owned_uppgrades['hottub'] = true;
+        console.log( owned_uppgrades['hottub'] +' hottub owned!');
         // sessionstorage("välj din egen nyckel", "namnet på item")
     }
 
-  // either use a map or array to store the brought items
 }
