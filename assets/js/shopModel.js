@@ -12,7 +12,7 @@ var owned_uppgrades = {
 
 //var stored_hottub = sessionStorage.getItem('hottub_owned');
 // create a objet where u define if the uppgrade is owned or not, and then save the object with a key "stored_objects" that u then 
-//question, can i change a value inside a object?? if not the comment above wont work
+//question, can i change a value inside a object?? if not then the comment above wont work
 
 house.addEventListener('click', open_shop);
 exit_button.addEventListener('click', close_shop);
