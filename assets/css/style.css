@@ -6,10 +6,19 @@
 }
 
 body{
-
+    height: 100vh; 
+    background: linear-gradient(
+        to bottom,
+        rgb(171, 208, 222) 0%,
+        rgb(171, 208, 222) 25%,
+        #83924c 25%,
+        #83924c 
+    );
 }
 
-/* model start*/
+/* model start 
+
+*/
 
 #model{
     visibility: visible;
@@ -92,8 +101,7 @@ justify-self: self-end;
 /* back objects start */
 
 #back-objects{
-    width: 100%;
-    height: 100%;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -146,7 +154,7 @@ justify-self: self-end;
 
 #front-objects{
     width: 100%;
-    height: 300px; 
+ 
     display: grid;
     justify-items: center;
     align-items: center;
@@ -166,12 +174,16 @@ justify-self: self-end;
 #capybara{
     width: 150px;
     grid-column: 3;
-
 }
-
 
 #plate{
     width: 100px;
     grid-column: 5;
 }
 /* front objects end */
+
+/* dialog model start*/
+/*#dialog_container{
+
+}
+/* dialog model end*/

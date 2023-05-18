@@ -1,6 +1,6 @@
 var money = 0;// sets the start money in the begining
 var money_text = document.getElementById('money_number');
-var stored_money = sessionStorage.getItem('money_number');
+var stored_money = sessionStorage.getItem('money_number'); // this dosent make sense, the item is a elements id??
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 var Capybara = document.getElementById('capybara');
@@ -8,13 +8,6 @@ var Capybara = document.getElementById('capybara');
 
 start_button.addEventListener('click', start_game);
 Capybara.addEventListener('click', capy_interact);
-
-
-var obj = {
-    name: 'itemone',
-    iconSrc: 'images/icon.png',
-    price: 10,
-}
 
 //obj_div_p.innerHtml = obj.name;
 //obj_div_img.src = obj.iconSrc;
