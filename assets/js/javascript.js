@@ -1,6 +1,6 @@
-var money = 0;// sets the start money in the begining
-var money_text = document.getElementById('money_number');
-var stored_money = sessionStorage.getItem('money_number'); // this dosent make sense, the item is a elements id??
+var coins = 0;// sets the start coins in the begining
+var coins_text = document.getElementById('coins_number');
+var stored_coins = sessionStorage.getItem('coins_number'); // this dosent make sense, the key is a elements id??
 var start_button = document.getElementById('start_button');
 var model = document.getElementById('model');
 var Capybara = document.getElementById('capybara');
@@ -11,12 +11,12 @@ Capybara.addEventListener('click', capy_interact);
 
 //obj_div_p.innerHtml = obj.name;
 //obj_div_img.src = obj.iconSrc;
-//money_text.innerHTML -= obj.price;
+//coins_text.innerHTML -= obj.price;
 
-if(stored_money)
+if(stored_coins)
 {
-    money = stored_money;
-    console.log("redan finns " + stored_money);
+    coins = stored_coins;
+    console.log("redan finns " + stored_coins);
     // om den redan finns
 }
 else 
@@ -28,7 +28,7 @@ function start_game() // once u press the button make the model not visible
 {
     growing_time();
     model.style.visibility = 'collapse';
-    money_text.innerHTML = money;
+    coins_text.innerHTML = coins;
 }
 
 function capy_interact()
