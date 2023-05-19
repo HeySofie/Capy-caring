@@ -29,14 +29,14 @@ function close_shop()
 
 function buy_hottub()
 {
-    if(hottub_owned == true)
+    if(hottub_owned == true || coins <= 5 )
     {
         hottub_item_text.innerHTML = "cant buy";
     }
 
     else
     {
-        coins-=1;
+        coins-=5;
         coins_text.innerHTML = coins;
         hottub_owned = true;
     }
