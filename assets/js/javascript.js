@@ -30,7 +30,13 @@ function start_game() // once u press the button make the model not visible
     model.style.visibility = 'collapse';
     money_text.innerHTML = money;
 }
+/*function fibo(x,y)
+{
+    sum = x + y;
+    return fibo(y, sum);
 
+}
+*/
 function capy_interact()
 {
     Capybara.src="/assets/imgs/capybara-sit.png";

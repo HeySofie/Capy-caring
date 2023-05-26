@@ -159,7 +159,7 @@ justify-self: self-end;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto ;
 }
 
 #farm{
@@ -183,7 +183,19 @@ justify-self: self-end;
 /* front objects end */
 
 /* dialog model start*/
-/*#dialog_container{
+#dialog_container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
 
+#dialog_model{
+    visibility: collapse;
+    background-color: bisque;
+    height: 100px;
+    width: 450px ;
+    border-radius: 10px;
+    padding: 20px;
 }
 /* dialog model end*/
