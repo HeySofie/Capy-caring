@@ -1,0 +1,1 @@
+var dialog_model = document.getElementById("dialog_model");

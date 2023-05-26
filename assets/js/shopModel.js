@@ -12,10 +12,10 @@ exit_button.addEventListener('click', close_shop);
 hottub_item.addEventListener('click', buy_hottub);
 
 
-if(hottub_owned == true )
-{
-    hottub.style.visibility = 'visible';
-}
+// if(hottub_owned == true )
+// {
+//     hottub.style.visibility = 'visible';
+// }
 
 function open_shop()
 {
@@ -39,6 +39,10 @@ function buy_hottub()
         coins-=5;
         coins_text.innerHTML = coins;
         hottub_owned = true;
+        //return close_shop;
+        
+        hottub.style.visibility = 'visible';
+        
     }
 
 }
