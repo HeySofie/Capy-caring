@@ -107,7 +107,7 @@ justify-self: self-end;
     grid-template-rows: 1fr;
 }
 
-#money-counter{ 
+#coins-counter{ 
     font-size: 30px;
     padding:0 7px 7px;
     margin: 10px;
